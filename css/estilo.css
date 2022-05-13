@@ -1,0 +1,113 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     position: relative;
+     text-align: center;
+ }
+ 
+ body {
+     font-family: 'open sans';
+ }
+  /*degradado de header*/
+ 
+  header {
+    width: 100%;
+    height: 700px;
+    background: #1c2020;
+    /* fallback for old browsers */
+    background-image: linear-gradient(to right, hsla(340, 95%, 50%, 0.671) hsla(317, 45%, 52%, 0.664)), url(../img/yo.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-image: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.671) hsla(317, 45%, 52%, 0.664)), url(../img/yo.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: contain;
+    position: relative;
+}
+
+ 
+ .contenedor {
+     padding: 60px;
+     width: 90%;
+     max-width: 1000%;
+     margin: auto;
+     overflow: hidden;
+    
+ }
+ 
+ .titulo {
+     color: #523952;
+     font-size: 30px;
+     text-align: center;
+     margin-bottom: 60px;
+ }
+ 
+ 
+ /*localizacion del navegador*/
+ nav {
+     text-align: left;
+     padding: 30px 50px 0 0;
+ }
+ 
+ nav>a {
+     color: rgb(2, 2, 2);
+     font-weight: 300;
+     text-decoration: none;
+     margin-right: 10px;
+ }
+ /*subrayado del navegador*/
+ nav>a:hover {
+     text-decoration: underline;
+ }
+ 
+ header.textos-header {
+     display: flex;
+     height: 430px;
+     width: 100%;
+     flex-direction: column;
+     text-align: left;
+ }
+ 
+ .textos-header h1 {
+     font-size: 50px;
+     color: rgb(247, 243, 243);
+ }
+ 
+ .textos-header h2 {
+     font-size: 30px;
+     font-weight: 300;
+     color: rgb(252, 252, 252);
+ }
+ 
+ .imgProfile {
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: justify;
+ }
+ 
+ .imgProfile img {
+     width: 18%;
+    
+     position: relative;
+ }
+ 
+ header::after {
+     content: "";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     opacity: 0.4;
+     background: linear-gradient(90deg, rgb(216, 187, 187) 0%, rgb(212, 119, 119) 50%, rgb(230, 53, 29) 100%);
+     z-index: 2;
+    
+ }
+ 
+ .wave {
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+ }
